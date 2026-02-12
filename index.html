@@ -4,194 +4,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Pribadi - Developer Web</title>
+    <title>Adithya Nurrahman - Web Developer</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#home" class="logo">Portofolio</a>
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#about" class="logo">
+                    <span>Adithya</span>
+                    <span>Nurrahman.</span>
+                </a>
                 <ul class="nav-menu">
-                    <li><a href="#about" class="nav-link">Tentang</a></li>
-                    <li><a href="#work" class="nav-link">Project</a></li>
-                    <li><a href="#skills" class="nav-link">Keahlian</a></li>
-                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main id="main-content">
-        <section id="home" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Adithya Nurrahman</h1>
-                    <p class="hero-subtitle">Saya adalah seorang Junior Web Development passionate yang menciptakan website responsif, user-friendly, dan accessible untuk berbagai klien.</p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
-                        <a href="#work" class="btn btn-secondary">Lihat Project</a>
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="grid-2-col">
+                    <div class="col-left">
+                        <h1 class="section-title">About</h1>
+                    </div>
+                    <div class="col-right">
+                        <p class="intro-text">
+                            Halo! Saya adalah mahasiswa semester 4 yang memiliki ketertarikan mendalam pada teknologi
+                            web dan kecerdasan buatan.
+                        </p>
+                        <div class="bio-text">
+                            <p>
+                                Saat ini saya sedang aktif menempuh studi di Universitas Siliwangi dan mengeksplorasi
+                                dunia pengembangan
+                                perangkat lunak.
+                                Fokus utama saya adalah membangun antarmuka web yang bersih, responsif, dan mudah
+                                digunakan.
+                            </p>
+                            <p>
+                                Saya percaya bahwa teknologi harus memudahkan kehidupan sehari-hari.
+                                Di waktu luang, hobi saya adalah mempelajari hal-hal baru seputar AI, bereksperimen
+                                dengan kode, dan terus mencari cara kreatif untuk memecahkan masalah.
+                            </p>
+                        </div>
+                        <div class="profile-image-wrapper">
+                            <img src="assets/images/more.jpeg" alt="Adithya Nurrahman" class="profile-image">
+                        </div>
                     </div>
                 </div>
-                <div class="hero-profile">
-                    <img src="assets/images/more.jpeg" alt="Profile Photo" class="profile-image">
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="grid-2-col">
+                    <div class="col-left">
+                        <h2 class="section-title">Projects</h2>
+                    </div>
+                    <div class="col-right">
+                        <div class="project-list">
+                            <article class="project-item">
+                                <div class="project-info">
+                                    <h3 class="project-name">Warung Digital Kelontong Arkan</h3>
+                                    <p class="project-desc">A fully responsive online shopping platform with cart
+                                        features, payment gateway, and an admin dashboard for inventory and order
+                                        management.</p>
+                                    <p class="project-tech">HTML5 · CSS3 · JavaScript · React</p>
+                                    <a href="https://warung-digital-paarkam.vercel.app/" class="project-link">View
+                                        Project</a>
+                                </div>
+                            </article>
+
+                            <article class="project-item">
+                                <div class="project-info">
+                                    <h3 class="project-name">Payung Geulis Tasikmalaya</h3>
+                                    <p class="project-desc">Modern blogging system with user management, comment
+                                        section, search pagination, and responsive design for optimal reading
+                                        experience.</p>
+                                    <p class="project-tech">HTML5 · CSS3 · JavaScript</p>
+                                    <a href="https://payung-geulis-tasikmalaya.vercel.app/" class="project-link">View
+                                        Project</a>
+                                </div>
+                            </article>
+
+                            <article class="project-item">
+                                <div class="project-info">
+                                    <h3 class="project-name">Portfolio Website</h3>
+                                    <p class="project-desc">Responsive portfolio website with smooth scrolling, subtle
+                                        animations, and optimal performance. Designed with best accessibility
+                                        principles.</p>
+                                    <p class="project-tech">HTML5 · CSS3 · JavaScript</p>
+                                    <a href="#" class="project-link">View Project</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section id="skills" class="section skills-section">
             <div class="container">
-                <h2>Tentang Saya</h2>
-                <div class="about-content">
-                    <p>Hallo! Saya adalah seorang web developer passionate yang berfokus pada pembuatan website yang responsive, user-friendly, dan accessible. Dengan pengalaman lebih dari 2 tahun, saya telah bekerja dengan berbagai klien dari startup hingga
-                        perusahaan besar.</p>
-
-                    <p>Keahlian saya mencakup HTML5, CSS3, JavaScript, React, dan berbagai tools modern development. Saya percaya bahwa desain yang baik harus dapat diakses oleh semua orang, dan saya selalu berusaha membuat website yang inclusive.</p>
-
-                    <p>Ketika tidak sedang coding, saya senang belajar teknologi baru, berkontribusi di open source, dan berbagi pengetahuan dengan komunitas developer.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="work" class="featured-work">
-            <div class="container">
-                <h2>Project Saya</h2>
-                <div class="work-grid">
-                    <article class="work-item">
-                        <div class="work-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
-                        <div class="work-content">
-                            <h3>Warung Digital Kelontong Arkan</h3>
-                            <p>Platform belanja online yang fully responsive dengan fitur keranjang, payment gateway, dan admin dashboard untuk mengelola inventory dan pesanan.</p>
-                            <div class="work-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">React</span>
+                <div class="grid-2-col">
+                    <div class="col-left">
+                        <h2 class="section-title">Skills</h2>
+                    </div>
+                    <div class="col-right">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Languages</h3>
+                                <ul class="skill-list">
+                                    <li>HTML5</li>
+                                    <li>CSS3 (Sass/SCSS)</li>
+                                    <li>JavaScript (ES6+)</li>
+                                </ul>
                             </div>
-                            <a href="#" class="work-link">Lihat Project →</a>
-                        </div>
-                    </article>
-
-                    <article class="work-item">
-                        <div class="work-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
-                        <div class="work-content">
-                            <h3>Payung Geulis Tasikmalaya</h3>
-                            <p>Sistem blogging modern dengan user management, comment section, search pagination, dan responsive desain untuk pengalaman membaca yang optimal.</p>
-                            <div class="work-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
+                            <div class="skill-category">
+                                <h3>Frameworks & Libs</h3>
+                                <ul class="skill-list">
+                                    <li>React.js</li>
+                                    <li>Node.js</li>
+                                    <li>Tailwind CSS (Knowledge)</li>
+                                </ul>
                             </div>
-                            <a href="#" class="work-link">Lihat Project →</a>
-                        </div>
-                    </article>
-
-                    <article class="work-item">
-                        <div class="work-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
-                        <div class="work-content">
-                            <h3>Portfolio Website</h3>
-                            <p>Website portofolio responsif dengan smooth scrolling, animasi subtle, dan performa optimal. Didesain dengan prinsip accessibility terbaik.</p>
-                            <div class="work-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
+                            <div class="skill-category">
+                                <h3>Tools & Design</h3>
+                                <ul class="skill-list">
+                                    <li>Git & GitHub</li>
+                                    <li>Figma / UI Design</li>
+                                    <li>Responsive Design</li>
+                                    <li>Web Accessibility (a11y)</li>
+                                </ul>
                             </div>
-                            <a href="#" class="work-link">Lihat Project →</a>
                         </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2>Keahlian & Tools</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">💻</div>
-                        <h3>HTML & CSS</h3>
-                        <p>Semantic markup dan styling responsif dengan Flexbox, Grid, dan animasi modern</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">⚙️</div>
-                        <h3>JavaScript</h3>
-                        <p>ES6+, DOM manipulation, dan berbagai library untuk interaktivitas yang optimal</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">⚛️</div>
-                        <h3>React</h3>
-                        <p>Component-based architecture, state management, dan performance optimization</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">🎨</div>
-                        <h3>UI/UX Design</h3>
-                        <p>Responsive design, accessibility, dan user-centered design principles</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact" class="section contact-section">
             <div class="container">
-                <h2>Mari Bekerja Sama</h2>
-                <p class="contact-intro">Jika Anda memiliki project menarik atau hanya ingin ngobrol tentang web development, jangan ragu untuk menghubungi saya!</p>
+                <div class="grid-2-col">
+                    <div class="col-left">
+                        <h2 class="section-title">Contact</h2>
+                    </div>
+                    <div class="col-right">
+                        <p class="contact-intro">
+                            If you have an interesting project or just want to chat about web development, feel free to
+                            reach out.
+                        </p>
 
-                <div class="contact-content">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nama *</label>
-                            <input type="text" id="name" name="name" required>
+                        <div class="contact-details">
+                            <div class="contact-row">
+                                <span class="label">Email</span>
+                                <a href="mailto:adthy.z1550@gmail.com" class="value">adthy.z1550@gmail.com</a>
+                            </div>
+                            <div class="contact-row">
+                                <span class="label">Phone</span>
+                                <a href="https://wa.me/6287825359424" class="value">+62 878 2535 9424</a>
+                            </div>
+                            <div class="contact-row">
+                                <span class="label">Location</span>
+                                <span class="value">Tasikmalaya, Indonesia</span>
+                            </div>
+                            <div class="contact-row">
+                                <span class="label">Social</span>
+                                <div class="social-links-inline">
+                                    <a href="#">LinkedIn</a>
+                                    <a href="https://github.com/MOREA19">GitHub</a>
+                                    <a href="https://www.instagram.com/moreadithh/">Instagram</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Pesan *</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-                    </form>
 
-                    <div class="contact-info">
-                        <h3>Informasi Kontak</h3>
-                        <div class="info-item">
-                            <p class="info-label">Email</p>
-                            <p><a href="mailto:your.email@example.com">adthy.z1550@gmail.com</a></p>
-                        </div>
-                        <div class="info-item">
-                            <p class="info-label">WhatsApp</p>
-                            <p><a href="https://wa.me/62812345678">+6287825359424</a></p>
-                        </div>
-                        <div class="info-item">
-                            <p class="info-label">Lokasi</p>
-                            <p>Tasikmalaya,Indonesia</p>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="social-link">LinkedIn</a>
-                            <a href="#" class="social-link">GitHub</a>
-                            <a href="#" class="social-link">Twitter</a>
-                        </div>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="4" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Portfolio Adithya Nurrahman. Crafted with care and accessibility in mind.</p>
-            <p class="footer-subtitle">Built with HTML, CSS & JavaScript</p>
+            <p>&copy; 2026 Adithya Nurrahman. All rights reserved.</p>
         </div>
     </footer>
 
