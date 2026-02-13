@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" id="htmlElement">
 
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,15 +17,29 @@
     <header class="site-header">
         <div class="container">
             <nav class="navbar">
-                <a href="#about" class="logo">
-                    <span>Adithya</span>
-                    <span>Nurrahman.</span>
-                </a>
+                <div class="navbar-left">
+                    <a href="#about" class="logo">
+                        <span>Adithya</span>
+                        <span>Nurrahman.</span>
+                    </a>
+                    <div class="lang-selector">
+                        <button class="lang-toggle" id="langToggle" aria-label="Toggle language" aria-expanded="false">
+                            <span data-i18n-key="langText">Language</span>
+                            <svg class="lang-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <button class="lang-option" data-lang="id">Bahasa Indonesia</button>
+                            <button class="lang-option" data-lang="en">English</button>
+                        </div>
+                    </div>
+                </div>
                 <ul class="nav-menu">
-                    <li><a href="#about" class="nav-link">Tentang</a></li>
-                    <li><a href="#projects" class="nav-link">Projek</a></li>
-                    <li><a href="#skills" class="nav-link">Keahlian</a></li>
-                    <li><a href="#contact" class="nav-link">Hubungi</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n-key="navAbout">Tentang</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n-key="navProjects">Projek</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n-key="navSkills">Keahlian</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n-key="navContact">Hubungi</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,25 +50,18 @@
             <div class="container">
                 <div class="grid-2-col">
                     <div class="col-left">
-                        <h1 class="section-title">Tentang</h1>
+                        <h1 class="section-title" data-i18n-key="aboutTitle">Tentang</h1>
                     </div>
                     <div class="col-right">
-                        <p class="intro-text">
-                            Halo! Saya adalah mahasiswa semester 4 yang memiliki ketertarikan mendalam pada teknologi
-                            web dan kecerdasan buatan.
+                        <p class="intro-text" data-i18n-key="aboutIntro">
+                            Halo! Saya adalah mahasiswa semester 4 yang memiliki ketertarikan mendalam pada teknologi web dan kecerdasan buatan.
                         </p>
                         <div class="bio-text">
-                            <p>
-                                Saat ini saya sedang aktif menempuh studi di Universitas Siliwangi dan mengeksplorasi
-                                dunia pengembangan
-                                perangkat lunak.
-                                Fokus utama saya adalah membangun antarmuka web yang bersih, responsif, dan mudah
-                                digunakan.
+                            <p data-i18n-key="aboutBio1">
+                                Saat ini saya sedang aktif menempuh studi di Universitas Siliwangi dan mengeksplorasi dunia pengembangan perangkat lunak. Fokus utama saya adalah membangun antarmuka web yang bersih, responsif, dan mudah digunakan.
                             </p>
-                            <p>
-                                Saya percaya bahwa teknologi harus memudahkan kehidupan sehari-hari.
-                                Di waktu luang, hobi saya adalah mempelajari hal-hal baru seputar AI, bereksperimen
-                                dengan kode, dan terus mencari cara kreatif untuk memecahkan masalah.
+                            <p data-i18n-key="aboutBio2">
+                                Saya percaya bahwa teknologi harus memudahkan kehidupan sehari-hari. Di waktu luang, hobi saya adalah mempelajari hal-hal baru seputar AI, bereksperimen dengan kode, dan terus mencari cara kreatif untuk memecahkan masalah.
                             </p>
                         </div>
                         <div class="profile-image-wrapper">
@@ -71,49 +76,39 @@
             <div class="container">
                 <div class="grid-2-col">
                     <div class="col-left">
-                        <h2 class="section-title">Projek</h2>
+                        <h2 class="section-title" data-i18n-key="projectsTitle">Projek</h2>
                     </div>
                     <div class="col-right">
                         <div class="project-list">
                             <article class="project-item">
                                 <div class="project-info">
-                                    <h3 class="project-name">Warung Digital Kelontong Arkan</h3>
-                                    <p class="project-desc">Warung Digital Kelontong Arkan adalah aplikasi web untuk
-                                        digitalisasi warung/UMKM yang menampilkan produk dan informasi usaha secara
-                                        online dengan antarmuka yang responsif dan mudah digunakan.
-                                        Saya berperan sebagai Frontend & Backend Developer dalam pengembangan aplikasi
-                                        ini menggunakan React dan TypeScript, dengan fokus pada performa, kemudahan
-                                        penggunaan (user experience), serta struktur kode yang terorganisir..</p>
+                                    <h3 class="project-name" data-i18n-key="project1Name">Warung Digital Kelontong Arkan</h3>
+                                    <p class="project-desc" data-i18n-key="project1Desc">Warung Digital Kelontong Arkan adalah aplikasi web untuk digitalisasi warung/UMKM yang menampilkan produk dan informasi usaha secara online dengan antarmuka yang responsif dan mudah digunakan. Saya berperan sebagai
+                                        Frontend & Backend Developer dalam pengembangan aplikasi ini menggunakan React dan TypeScript, dengan fokus pada performa, kemudahan penggunaan (user experience), serta struktur kode yang terorganisir..</p>
                                     <p class="project-tech">HTML5 · CSS3 · TypeScript · React</p>
-                                    <a href="https://warung-digital-paarkam.vercel.app/" class="project-link">View
+                                    <a href="https://warung-digital-paarkam.vercel.app/" class="project-link" data-i18n-key="viewProject">View
                                         Project</a>
                                 </div>
                             </article>
 
                             <article class="project-item">
                                 <div class="project-info">
-                                    <h3 class="project-name">Payung Geulis Tasikmalaya</h3>
-                                    <p class="project-desc">Payung Geulis Tasikmalaya adalah website yang bertujuan
-                                        untuk mempromosikan dan memperkenalkan produk budaya lokal Payung Geulis
-                                        Tasikmalaya secara digital.
-                                        Saya berperan sebagai Frontend Developer dalam proyek ini yang masih dalam tahap
-                                        pengembangan (ongoing development), menggunakan teknologi React dan TypeScript
-                                        untuk membangun antarmuka yang responsif, modern, dan mudah digunakan.</p>
+                                    <h3 class="project-name" data-i18n-key="project2Name">Payung Geulis Tasikmalaya</h3>
+                                    <p class="project-desc" data-i18n-key="project2Desc">Payung Geulis Tasikmalaya adalah website yang bertujuan untuk mempromosikan dan memperkenalkan produk budaya lokal Payung Geulis Tasikmalaya secara digital. Saya berperan sebagai Frontend Developer dalam proyek ini
+                                        yang masih dalam tahap pengembangan (ongoing development), menggunakan teknologi React dan TypeScript untuk membangun antarmuka yang responsif, modern, dan mudah digunakan.</p>
                                     <p class="project-tech">HTML5 · CSS3 · TypeScript · React</p>
-                                    <a href="https://payung-geulis-tasikmalaya.vercel.app/" class="project-link">View
+                                    <a href="https://payung-geulis-tasikmalaya.vercel.app/" class="project-link" data-i18n-key="viewProject">View
                                         Project</a>
                                 </div>
                             </article>
 
                             <article class="project-item">
                                 <div class="project-info">
-                                    <h3 class="project-name">Portofolio Website</h3>
-                                    <p class="project-desc">Saya membuat portofolio website dengan smooth scrolling,
-                                        subtle
-                                        animations, dan optimal performance. Didesain dengan prinsip aksesibilitas
-                                        terbaik.</p>
+                                    <h3 class="project-name" data-i18n-key="project3Name">Portofolio Website</h3>
+                                    <p class="project-desc" data-i18n-key="project3Desc">Saya membuat portofolio website dengan smooth scrolling, subtle animations, dan optimal performance. Didesain dengan prinsip aksesibilitas terbaik.
+                                    </p>
                                     <p class="project-tech">HTML5 · CSS3 · JavaScript</p>
-                                    <a href="#" class="project-link">View Project</a>
+                                    <a href="#" class="project-link" data-i18n-key="viewProject">View Project</a>
                                 </div>
                             </article>
                         </div>
@@ -126,12 +121,12 @@
             <div class="container">
                 <div class="grid-2-col">
                     <div class="col-left">
-                        <h2 class="section-title">Keahlian</h2>
+                        <h2 class="section-title" data-i18n-key="skillsTitle">Keahlian</h2>
                     </div>
                     <div class="col-right">
                         <div class="skills-grid">
                             <div class="skill-category">
-                                <h3>Languages</h3>
+                                <h3 data-i18n-key="skillCategory1">Languages</h3>
                                 <ul class="skill-list">
                                     <li>HTML5</li>
                                     <li>CSS3 (Sass/SCSS)</li>
@@ -139,7 +134,7 @@
                                 </ul>
                             </div>
                             <div class="skill-category">
-                                <h3>Frameworks & Libs</h3>
+                                <h3 data-i18n-key="skillCategory2">Frameworks & Libs</h3>
                                 <ul class="skill-list">
                                     <li>React.js</li>
                                     <li>Node.js</li>
@@ -147,7 +142,7 @@
                                 </ul>
                             </div>
                             <div class="skill-category">
-                                <h3>Tools & Design</h3>
+                                <h3 data-i18n-key="skillCategory3">Tools & Design</h3>
                                 <ul class="skill-list">
                                     <li>Git & GitHub</li>
                                     <li>Figma / UI Design</li>
@@ -165,30 +160,28 @@
             <div class="container">
                 <div class="grid-2-col">
                     <div class="col-left">
-                        <h2 class="section-title">Hubungi</h2>
+                        <h2 class="section-title" data-i18n-key="contactTitle">Hubungi</h2>
                     </div>
                     <div class="col-right">
-                        <p class="contact-intro">
-                            Jika Anda memiliki proyek yang menarik atau hanya ingin berbicara tentang pengembangan web,
-                            jangan ragu untuk
-                            menghubungi saya.
+                        <p class="contact-intro" data-i18n-key="contactIntro">
+                            Jika Anda memiliki proyek yang menarik atau hanya ingin berbicara tentang pengembangan web, jangan ragu untuk menghubungi saya.
                         </p>
 
                         <div class="contact-details">
                             <div class="contact-row">
-                                <span class="label">Email</span>
+                                <span class="label" data-i18n-key="contactEmail">Email</span>
                                 <a href="mailto:adthy.z1550@gmail.com" class="value">adthy.z1550@gmail.com</a>
                             </div>
                             <div class="contact-row">
-                                <span class="label">Phone</span>
+                                <span class="label" data-i18n-key="contactPhone">Phone</span>
                                 <a href="https://wa.me/6287825359424" class="value">+62 878 2535 9424</a>
                             </div>
                             <div class="contact-row">
-                                <span class="label">Lokasi</span>
+                                <span class="label" data-i18n-key="contactLocation">Lokasi</span>
                                 <span class="value">Tasikmalaya, Indonesia</span>
                             </div>
                             <div class="contact-row">
-                                <span class="label">Media Sosial</span>
+                                <span class="label" data-i18n-key="contactSocial">Media Sosial</span>
                                 <div class="social-links-inline">
                                     <a href="https://id.linkedin.com/in/moreadith">LinkedIn</a>
                                     <a href="https://github.com/MOREA19">GitHub</a>
@@ -199,19 +192,18 @@
 
                         <form class="contact-form" id="contactForm">
                             <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Name" required>
+                                <input type="text" id="name" name="name" placeholder="Name" data-i18n-placeholder="namePlaceholder" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <input type="email" id="email" name="email" placeholder="Email" data-i18n-placeholder="emailPlaceholder" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" data-i18n-placeholder="subjectPlaceholder" required>
                             </div>
                             <div class="form-group">
-                                <textarea id="message" name="message" rows="4" placeholder="Message"
-                                    required></textarea>
+                                <textarea id="message" name="message" rows="4" placeholder="Message" data-i18n-placeholder="messagePlaceholder" required></textarea>
                             </div>
-                            <button type="submit" class="btn-submit">Send Message</button>
+                            <button type="submit" class="btn-submit" data-i18n-key="sendBtn">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -221,7 +213,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Adithya Nurrahman. All rights reserved.</p>
+            <p data-i18n-key="footerText">&copy; 2026 Adithya Nurrahman. All rights reserved.</p>
         </div>
     </footer>
 
