@@ -302,9 +302,7 @@ img {
 .profile-image-wrapper {
     width: 100%;
     max-width: 500px;
-    /* Wider */
     height: 700px;
-    /* Taller for full body */
     border-radius: 20px;
     overflow: hidden;
     margin: 0 auto;
@@ -322,7 +320,6 @@ img {
     object-fit: cover;
     object-position: top center;
     transform: scale(1.1);
-    /* Permanent zoom */
     transition: transform 0.5s ease;
 }
 
@@ -346,7 +343,6 @@ img {
 
 .profile-image-wrapper:hover .profile-image {
     transform: scale(1.2);
-    /* Zoom more on hover */
 }
 
 .project-list {
